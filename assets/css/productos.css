@@ -1,6 +1,6 @@
 .productos{
     display: flex;
-    gap: 0.5rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 2rem;
@@ -14,7 +14,7 @@
 .productos li{
     text-align: center;
     width: 20%;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
     padding: 1rem;
@@ -51,8 +51,28 @@ li h2{
     font-size: 1.6rem;
 }
 
-/*@media screen and (max-width: 782) {
+@media screen and (max-width: 962px){
     .productos li{
-       box-sizing: initial;
+        width: 30%;
     }
-}*/
+    
+}
+
+@media screen and (max-width: 641px){
+    .productos li{
+        width: 35%;
+    }
+    
+}
+
+@media screen and (max-width: 550px){
+    .productos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos li{
+        width: 70%;
+    }
+    
+}
